@@ -202,6 +202,21 @@ article {
   z-index: 1;
 }
 
+.icon-box-research {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: hsl(240, 1%, 25%);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
 .icon-box::before {
   content: "";
   position: absolute;
@@ -516,7 +531,24 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 
+/*-----------------------------------*\
+/* Research Experience */
+/*-----------------------------------*/
 
+.research-flex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 2fr;
+  grid-gap: 10px;
+  padding-bottom: 50px;
+}
+
+.left-order{
+  order: 1;
+}
+.right-order{
+  order: 2;
+}
 /**
  * #service 
  */
@@ -811,7 +843,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: hsl(38.22deg 89.39% 40.5%);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -1037,7 +1069,13 @@ main {
 .project-item > a:hover img { transform: scale(1.1); }
 
 .project-title,
+.project-tech-stack,
 .project-category { margin-left: 10px; }
+
+
+.project-tech-stack {
+  color: hsl(38.22deg 89.39% 40.5%);
+}
 
 .project-title {
   color: var(--white-2);
@@ -1048,9 +1086,13 @@ main {
 }
 
 .project-category {
-  color: var(--light-gray-70);
+  color: var(--eerie-black-1);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+
+  a {
+    color: blue;
+  }
 }
 
 
@@ -1660,7 +1702,7 @@ td {
 
   .filter-item button:hover { color: var(--light-gray-70); }
 
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
+  .filter-item button.active { color: hsl(30.43deg 63.96% 46.2%); }
 
   /* portfolio and blog grid */
 
@@ -1784,7 +1826,7 @@ td {
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+  .project-list { grid-template-columns: repeat(2, 1fr); }
 
 
 

@@ -168,7 +168,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <li class="navbar-item">
@@ -304,13 +304,49 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Programming Languages</h4>
-              <p class="timeline-text">C/C++, Python (Sklearn, Pandas, Matplotlib), Java, Javascript, x86 Assembly, Bash</p>
+            <li class="research-flex">
+              <div class="icon-box-research">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="left-order">
+                <img src="assets/images/Research_Thesis.jpg" alt="" style="width: 100%; height: auto;">
+              </div>
+              <div class="right-order">
+                <h4 class="h4 timeline-item-title">Cluster Based Distributed State Management of Network Function</h4>
+                <span>Systems and Networking, Distributed System</span>
+
+                <p class="timeline-text">Undergraduate thesis project under the guidance of <a href="https://scholar.google.com/citations?user=I0k0ReMAAAAJ&hl=en&oi=sra" style="display: inline;">Dr. Rezwana Reaz</a>.
+                  We propose a distributed state management system for network functions (NFs) that ensures dynamic and efficient flow and state migration between NFs. Our approach introduces three innovative mechanisms to enhance the performance of stateful NFs. 
+                  First, we implement multithreaded NFs to accelerate packet processing and optimize resource use. 
+                  Second, we propose a cluster-based state replication scheme to minimize bandwidth consumption during flow migration, with states continually replicated across cluster members to facilitate smooth migration without overloading the network. 
+                  Finally, we present an enhanced cluster-based load balancing algorithm to evenly distribute load and prevent bottlenecks. These approaches work together to maintain global state consistency without relying on a central authority. 
+                  Experimental results demonstrate that our system achieves faster processing and reduced state migration overhead compared to existing solutions.
+                
+                </p>
+              </div>
             </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Frameworks</h4>
-              <p class="timeline-text">Docker, Django, NextJS, React, Tensorflow, Oracle DBMS, LaTeX</p>
+            <li class="research-flex">
+              <div class="icon-box-research">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="left-order">
+                <img src="assets/images/Research_Meetup.jpg" alt="" style="width: 100%; height: auto;">
+              </div>
+              <div class="right-order">
+                <h4 class="h4 timeline-item-title">Where Will You Meet on the Next Sunday?: A Deep
+                  Learning-based Approach for a Meetup POI Prediction</h4>
+                <span>Deep Learning</span>
+
+                <p class="timeline-text">Recent work with <a href="https://scholar.google.com/citations?hl=en&user=pTwXI4AAAAAJ" style="display: inline;"> Salsabil Arabi</a>
+                  and <a href="https://scholar.google.com/citations?hl=en&user=pVDa7M0AAAAJ" style="display: inline;">Adiba Shaira</a> under the supervision of <a href="https://scholar.google.com/citations?hl=en&user=0wGw0ocAAAAJ" style="display: inline;">Dr. Tanzima Hashem</a>.
+                  
+                  In this paper, we introduce a deep learning-based model to predict an individual's point of interest (POI) for meetups at a specific time, even without knowing the companions involved. 
+                  By leveraging transformer blocks, our approach incorporates features such as individual visit preferences, companions' visit patterns, and historical meetup data derived from check-ins and friendship networks. 
+                  We demonstrate that these features enable highly accurate POI predictions. Validation on the US-based Foursquare dataset shows that our model significantly outperforms current state-of-the-art baseline models.
+                  Currently, our manuscript is under review for publication.
+                
+                </p>
+              </div>
             </li>
 
           </ol>
@@ -483,7 +519,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
@@ -498,217 +534,256 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Systems</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Machine Learning</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Software Development</button>
             </li>
 
           </ul>
 
           <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+            <button class="filter-select" data-select> 
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-select-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
-              </div>
+              </div> 
 
-            </button>
+            </button> 
 
-            <ul class="select-list">
+            <!-- <ul class="select-list">
 
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Machine Learning</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Systems</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Software Development</button>
               </li>
 
-            </ul>
+            </ul> -->
+            
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/purbasha-nishat/gender-classification-from-audio-clips">
+                <h2 class="project-title">Gender Classification from Audio Clips</h2>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/mfcc.png" alt="ppml" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
+                
+                <p class="project-category"><a href="https://github.com/purbasha-nishat/gender-classification-from-audio-clips"><u>View on Github</u></a></p>
+                <p class="project-tech-stack">Tensorflow, Keras, Sklearn</p>
+                <p class="project-category">Term Project for CSE 472: Machine Learning Sessional offered by the CSE Department of BUET. 
+                  In this project, we aim to build a machine learning model that can identify the gender of a person from their voice recording. 
+                  In the process, we use two intermediary data representation format of the audio clips- Mel Spectrogram (Mel) and Mel-Frequency Cepstral Coefficients (MFCC).
+                </p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/purbasha-nishat/Vectorized-Convolutional-Neural-Network-from-Scratch">
+                  <h2 class="project-title">Vectorized Convolutional Neural Network from Scratch</h2>
+
+                  <figure class="project-img">
+                  <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/CNN.JPG" alt="ppml" loading="lazy">
+                  </figure>
+
+                  
+                  <p class="project-category"><a href="https://github.com/purbasha-nishat/Vectorized-Convolutional-Neural-Network-from-Scratch"><u>View on Github</u></a></p>
+                  <p class="project-tech-stack">Numpy</p>
+                  <p class="project-category">A vectorized version of a Convolutional Neural Network using only numpy without any deeplearning frameworks. 
+                    Training and testing of the developed model is done on the <a style="display: inline;" href="https://www.kaggle.com/datasets/BengaliAI/numta">NumtaDB</a>: Bengali Handwritten Digits dataset. 
+                    This project is part of the final assignment of CSE 472: Machine Learning Sessional offered by the CSE Department of BUET. 
+                    The final score was tested on a hidden dataset.</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="software development">
+              <a href="https://github.com/eventfly">
+                  <h2 class="project-title">EventFly: An Online Event Management Tool</h2>
+
+                  <figure class="project-img">
+                  <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/EventFly.jpg" alt="forage" loading="lazy">
+                  </figure>
+
+                  
+                  <p class="project-category">
+                    <a href="https://drive.google.com/drive/u/0/folders/1yiD1DV7S3QcTj8acwGGFpTlsd4CRd_u8">
+                      <u>Video Demonstration</u>
+                    </a>
+                    <a href="https://github.com/eventfly">
+                      <u>View on Github</u>
+                    </a>
+                  </p>
+                  <p class="project-tech-stack">ExpressJS, Kubernetes, Docker, NAT Streaming Server, MongoDB</p>
+                  <p class="project-category">EventFly is an online event management platform where users can host and attend online or offline events based on the user preferences.
+                    This was the term Project for CSE 408: Software Development Sessional offered by the CSE Department of BUET.</p>
+              </a>
+          </li>
+
+            <li class="project-item  active" data-filter-item data-category="software development">
+                <a href="https://github.com/purbasha-nishat/cycloan">
+                    <h2 class="project-title">Cycloan: An Online Cycle Sharing Platform</h2>
+
+                    <figure class="project-img">
+                    <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/cycloan.jfif" alt="forage" loading="lazy">
+                    </figure>
+
+                    
+                    <p class="project-category"><a href="https://www.youtube.com/watch?v=5lOaXUqJ86M"><u>View on YouTube</u></a><a href="https://github.com/purbasha-nishat/cycloan"><u>View on Github</u></a></p>
+                    <p class="project-tech-stack">Django, Oracle SQL</p>
+                    <p class="project-category">Cycloan is a ride sharing platform where users can put up their cycles for renting it to others and vice versa.
+                      The motive behind this project was to design a RDBMS based system on using only raw SQL queries. 
+                      This was the term project for the CSE 216: Database Management System Sessional course offered by the CSE Department of BUET.</p>
+                </a>
+            </li>
+              
+
+            <li class="project-item  active" data-filter-item data-category="systems">
+              <a href="https://github.com/Najib-Haq/CSE-322-Computer-Networks">
+                <h2 class="project-title">TCP-Adaptive Reno</h2>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/nhs/tcp.PNG" alt="swift" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
+                
+                <p class="project-category"><a href="https://github.com/Najib-Haq/CSE-322-Computer-Networks"><u>View on Github</u></a></p>
+                <p class="project-tech-stack">NS3</p>
+                <p class="project-category">Simulation and implementation of a congestion control algorithm on two different topologies using NS3 - a network simulator. This was the term project for the CCSE 322: Computer Networks course offered by the CSE Department of BUET.</p>
 
               </a>
             </li>
+            
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="systems">
+              <a href="https://github.com/Najib-Haq/CSE-314-Operating-System">
+                <h2 class="project-title">Xv6 Memory Management</h2>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/xv6.jpeg" alt="xv6" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
+                
+                <p class="project-category"><a href="https://github.com/Najib-Haq/CSE-314-Operating-System"><u>View on Github</u></a></p>
+                <p class="project-tech-stack">Xv6 Operating System</p>
+                <p class="project-category">Developed the paging framework of xv6 operating system, as well as implementing many other functionalities of the operating system. This assignments are for the CSE 314: Operating System Sessional course offered by the CSE Department of BUET.</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="systems">
+                <a href="https://github.com/Najib-Haq/CSE-310-Compiler">
+                  <h2 class="project-title">Compiler from scratch</h2>
+  
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+  
+                    <img src="./assets/images/nhs/compiler.jpg" alt="xv6" loading="lazy">
+                  </figure>
+  
+                  
+                  <p class="project-category"><a href="https://github.com/Najib-Haq/CSE-310-Compiler"><u>View on Github</u></a></p>
+                  <p class="project-tech-stack">Xv6 Operating System</p>
+                  <p class="project-category">A compiler is made from scratch using yacc and bison. This assignments are for the CSE 310: Compiler Sessional course offered by the CSE Department of BUET.</p>
+  
+                </a>
+              </li>
+            
+            
+            
+            <li class="project-item  active" data-filter-item data-category="software development">
+              <a href="https://www.youtube.com/watch?v=yPRRjTt6wIU">
+                <h2 class="project-title">Pandemic</h2>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/nhs/pandemic.PNG" alt="forage" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
+                
+                <p class="project-category"><a href="https://www.youtube.com/watch?v=yPRRjTt6wIU"><u>View on YouTube</u></a></p>
+                <p class="project-tech-stack">Django, Oracle SQL</p>
+                <p class="project-category">An online dashboard for pandemic updates. This was the term project for the CSE 216: Database Management System Sessional course offered by the CSE Department of BUET. </p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
+            <li class="project-item  active" data-filter-item data-category="software development">
+                <a href="https://github.com/Najib-Haq/Bookabook">
+                  <h2 class="project-title">Bookabook</h2>
+  
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+  
+                    <img src="./assets/images/nhs/bookabook.png" alt="forage" loading="lazy">
+                  </figure>
+  
+                  
+                  <p class="project-category"><a href="https://github.com/Najib-Haq/Bookabook"><u>View on Github</u></a></p>
+                  <p class="project-tech-stack">Java, JavaFX, Hibernate ORM</p>
+                  <p class="project-category">An online peer-to-peer book sharing platform . This was the term project for the CSE 108: Object Oriented Programming Sessional course offered by the CSE Department of BUET. This project won the 2nd prize for Project Showcasing in BUET CSE Fest 2019.</p>
+                </a>
+              </li>
+            
+            
+        
+            
           </ul>
 
         </section>
