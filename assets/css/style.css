@@ -168,7 +168,7 @@ body { background: var(--white-1); }
 .sidebar,
 article {
   background: var(--white-1);
-  border: 1px solid var(--jet);
+  border: 0px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -485,7 +485,7 @@ main {
   width: 100%;
   background: hsl(35deg 24.67% 68.63% / 25%);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  border: 0px solid var(--jet);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
